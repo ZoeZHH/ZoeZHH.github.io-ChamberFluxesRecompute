@@ -52,7 +52,11 @@ To accurately compute the correct flux values, it's essential to obtain the prec
     -   If the differences in standard error values fall within the 5-10% range, opt for the fit with the higher flux
 5.  Export your data set for further analysis
 
-![Reindeer Grazing](images/Tundra_Veg.JPG){#fig-grazing}
+## Tips
+
+Ultimately, we aim to determine flux values when the chamber headspace is at atmospheric concentration. Using a linear fit for measurements might underestimate the flux at ambient concentrations. An exponential curve fit, on the other hand, allows us to calculate the $dc/dt$ at time 0, which corresponds to when the chamber concentration matches the atmospheric concentration. As such, you might find that the exponential curve fit offers a more accurate interpretation most of the time!
+
+![Chamber Measurements](images/fluxesmeasurements copy.jpg){#fig-grazing}
 
 ### References
 
