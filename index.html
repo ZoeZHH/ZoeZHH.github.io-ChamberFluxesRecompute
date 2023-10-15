@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reconciling Carbon-cycle Concepts, Terms, and Methods</title>
+<title>Chamber Technique - Recompute Carbon Fluxes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reconciling Carbon-cycle Concepts, Terms, and Methods</h1>
+<h1 class="title">Chamber Technique - Recompute Carbon Fluxes</h1>
 </div>
 
 
@@ -80,107 +80,56 @@ div.csl-indent {
 
 </header>
 
-<p><span class="citation" data-cites="chapin_reconciling_2006">Chapin et al. (<a href="#ref-chapin_reconciling_2006" role="doc-biblioref">2006</a>)</span> is a helpful resource that clarifies some key terms and concepts that are used to discuss carbon exchange. Different fields have different conventions (e.g.&nbsp;micrometeorology vs ecology) and it can get pretty confusing when you’re reading literature from a mix of fields or trying to write to a broad audience. A good example</p>
-<section id="nep" class="level2">
-<h2 class="anchored" data-anchor-id="nep">NEP</h2>
-<p>Net ecosystem productivity (<strong>NEP</strong>) is the primary component of the C balance in most terrestrial ecosystems. It is defined as the difference between ecosystem scale photosynthesis and respiration: <span class="math inline">\(NEP = GPP - ER\)</span> <span class="citation" data-cites="lovett_is_2006">(e.g., <a href="#ref-lovett_is_2006" role="doc-biblioref">Lovett et al., 2006</a>)</span>. The sign convention is <strong>opposite</strong> of what micrometeorologists often use. Positive (+) indicates accumulation of C <strong>in</strong> the ecosystem, negative (-) indicates loss of C <strong>from</strong> the ecosystem.</p>
+<p>The chamber method is a widely-recognized technique employed for quantifying soil carbon fluxes within distinct localized areas or ecosystems. Not only is it cost-effective, but it also offers high-resolution measurements at specific sites. There are primarily two methods to analyze the flux data derived from the chamber approach: gas chromatography and the use of a portable analyzer. This website provides the procedures for recomputing fluxes when utilizing a portable analyzer.</p>
+<section id="background-information" class="level2">
+<h2 class="anchored" data-anchor-id="background-information">Background Information</h2>
+<section id="firstly-its-important-to-know-the-requirements-for-chamber-based-measurements" class="level4">
+<h4 class="anchored" data-anchor-id="firstly-its-important-to-know-the-requirements-for-chamber-based-measurements">Firstly, it’s important to know the requirements for chamber based measurements:</h4>
 <ul>
-<li>Gross primary productivity (<strong>GPP</strong>) is the total photosynthetic uptake of carbon dioxide <span class="math inline">\(CO_2\)</span> by an ecosystem.</li>
-<li>Ecosystem respiration (<strong>ER</strong>) is the total <strong>aerobic</strong> respiration of <span class="math inline">\(CO_2\)</span> by an ecosystem: <span class="math inline">\(ER = AR + HR\)</span>.
-<ul>
-<li>Autotrophic respiration (<strong>AR</strong>) is <span class="math inline">\(CO_2\)</span> respired by primary producers (i.e., plants). From this we can define net primary production (<strong>NPP</strong>) as the difference between GPP and AR: <span class="math inline">\(NPP = GPP-AR\)</span></li>
-<li>Heterotrophic (HR) respiration is <span class="math inline">\(CO_2\)</span> respired by all other living organisms (i.e., bacteria, animals, fungi). This <span class="math inline">\(CO_2\)</span> is also derived from GPP, but in a more roundabout way.</li>
-</ul></li>
+<li><p>Flux concentration in the chamber = Flux concentration in the air</p></li>
+<li><p>Soil flux haven’t been disturbed</p></li>
+<li><p>Pressure inside the chamber = pressure of the ambient air</p></li>
+<li><p>Good mixing inside the chamber</p></li>
+<li><p>Deploying the chamber has no disturbance to soil moisture, temperature and radiation balance</p></li>
 </ul>
 </section>
-<section id="nee" class="level2">
-<h2 class="anchored" data-anchor-id="nee">NEE</h2>
-<p>Net ecosystem exchange <strong>NEE</strong> is net flux of <span class="math inline">\(CO_2\)</span> <em>observed</em> between an ecosystem and the atmosphere (e.g., by eddy covariance [EC] or flux chamber [FC] methods). It is frequently treated as the inverse of NEP: i.e., NEE = ER - GPP <span class="citation" data-cites="aubinet_eddy_2012">(<a href="#ref-aubinet_eddy_2012" role="doc-biblioref">Aubinet et al., 2012</a>)</span>. The sign convention is opposite of NEP because NEE was defined by atmospheric scientists; positive (+) indicates accumulation of C <strong>in</strong> the atmosphere, negative (-) uptake of C <strong>from</strong> the atmosphere.</p>
-<ul>
-<li>At small spatial scales and over short timescales <span class="math inline">\(NEP \approx -NEE\)</span> <span class="citation" data-cites="baldocchi_assessing_2003">(<a href="#ref-baldocchi_assessing_2003" role="doc-biblioref">Baldocchi, 2003</a>)</span> but strictly speaking, <strong>they are not equivalent</strong>.</li>
-<li>Over larger/longer scales they diverge:
-<ul>
-<li>ER derived <span class="math inline">\(CO_2\)</span> dissolved in ground water:
-<ul>
-<li>Transported <strong>out of</strong> an ecosystem; it will not be <em>observed</em> by eddy covariance methods but its still part of NEP</li>
-<li>Transported <strong>into</strong> an ecosystem; it will be <em>observed</em> by eddy covariance methods but is actually part of NEP in ecosystem the dissolved <span class="math inline">\(CO_2\)</span> orriginated in</li>
-</ul></li>
-<li>During fires, NEE and NEP are also drastically different, because <span class="math inline">\(CO_2\)</span> fluxes derived from combustion are not included in NEP
-<ul>
-<li>Can have <span class="math inline">\(NEP \approx 0\)</span> while <span class="math inline">\(NEE &gt;&gt; 0\)</span></li>
-</ul></li>
-</ul></li>
-</ul>
+<section id="secondly-lets-go-through-the-equation-on-calculating-the-flux-data-by-employing-chamber" class="level4">
+<h4 class="anchored" data-anchor-id="secondly-lets-go-through-the-equation-on-calculating-the-flux-data-by-employing-chamber"><strong>Secondly,</strong> let’s go through the equation on calculating the flux data by employing chamber:</h4>
+<p><span class="math inline">\(FCO2 = ((\rho* Ve)/A) * dc/dt\)</span></p>
+<p><span class="math inline">\(\rho\)</span> : the dry air density</p>
+<p><span class="math inline">\(A\)</span>: the surface area covered by chamber</p>
+<p><span class="math inline">\(Ve\)</span>: effective volume, which was assumed to be 1.1 times the geometric volume, V of the chamber</p>
+<p><span class="math inline">\(dc/dt\)</span>: rate of change in flux concentration with time t</p>
+<p>To accurately compute the correct flux values, it’s essential to obtain the precise mixing ratio (<span class="math inline">\(dc/dt\)</span>). Therefore, the following procedures will guide you on how to recompute carbon fluxes by determining the correct (<span class="math inline">\(dc/dt\)</span>)​.</p>
 </section>
-<section id="the-necb" class="level2">
-<h2 class="anchored" data-anchor-id="the-necb">The NECB</h2>
-<p><span class="citation" data-cites="chapin_reconciling_2006">Chapin et al. (<a href="#ref-chapin_reconciling_2006" role="doc-biblioref">2006</a>)</span> define the term net ecosystem carbon balance (NECB) to describe the sum of all components of the carbon (C) balance for an ecosystem. The NECB is a <b>broad</b> concept, we can’t measure it completely with micrometeorologic methods alone. It represents the net change in ecosystem C per unit time: <span class="math inline">\(NECB = \frac{dC}{dt}\)</span>. It includes:</p>
-<ul>
-<li>All sinks and sources of both organic and inorganic C
-<ul>
-<li>Natural <strong>b</strong> anthropogenic in origin</li>
-</ul></li>
-<li>Fluxes of C via numerous pathways:
-<ul>
-<li>Terrestrial ↔︎ atmospheric</li>
-<li>Terrestrial ↔︎ aquatic</li>
-<li>Bulk/particulate transport</li>
-</ul></li>
-</ul>
 </section>
-<section id="components-of-the-necb" class="level2">
-<h2 class="anchored" data-anchor-id="components-of-the-necb">Components of the NECB</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Chapin_fig_1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><span class="citation" data-cites="chapin_reconciling_2006">Chapin et al. (<a href="#ref-chapin_reconciling_2006" role="doc-biblioref">2006</a>)</span> Figure 1</figcaption><p></p>
-</figure>
-</div>
-<p><span class="math display">\[
-NECB = -NEE + F_{CO} + F_{CH4} + F_{VOC} + F_{DIC} + F_{DOC} + F_{PC}
-\]</span></p>
+<section id="procedures" class="level2">
+<h2 class="anchored" data-anchor-id="procedures">Procedures</h2>
+<ol type="1">
+<li>Download the flux analysis software that corresponds to your analyzer. As an example, I downloaded SoilFluxPro, designed by Licor, to examine data analyzed by the LI-7810 Portable Analyzer</li>
+<li>Recompute the fluxes by examining the figures that plot flux concentrations against time
 <ul>
-<li>NEE: is the primary component of the NECB in most ecosystems.
+<li>Set the appropriate start and end times (At least ranging from 0-50 s for 50 data points)
 <ul>
-<li>Over short timescales, in some ecosystems <span class="math inline">\(NECB \approx -NEE\)</span>$ <span class="citation" data-cites="baldocchi_assessing_2003">Baldocchi (<a href="#ref-baldocchi_assessing_2003" role="doc-biblioref">2003</a>)</span>. But as the temporal and/or spatial scales increase NEE and NECB diverge.</li>
+<li>Exponential / Linear lines should pass through ~all initial points, meeting the requirement that the flux concentration in the chamber equals the flux concentration in the air.</li>
+<li>The standard error of <span class="math inline">\(dc/dt\)</span> should be small</li>
 </ul></li>
-<li><span class="math inline">\(F_{CO}\)</span>: Fluxes of carbon monoxide (CO)
-<ul>
-<li>Anthropogenic systems (e.g., combustion engines) and forest fires are the primary sources of CO</li>
-<li>Soils are fairly strong CO sinks depending on temperature, most uptake occurs in the tropics <span class="citation" data-cites="cowan_seasonal_2018">Cowan et al. (<a href="#ref-cowan_seasonal_2018" role="doc-biblioref">2018</a>)</span></li>
 </ul></li>
-<li><span class="math inline">\(F_{CH4}\)</span>: Fluxes of methane (CH4)
-</li>
+<li>Export the recomputed dataset and verify the values for a second recompute
 <ul>
-<li>Ecosystem ↔︎ atmosphere <span class="math inline">\(CO_4\)</span> fluxes</li>
-<li>A significant component of the NECB in many wetland ecosystems (e.g., <span class="citation" data-cites="lai_methane_2009">Lai (<a href="#ref-lai_methane_2009" role="doc-biblioref">2009</a>)</span>; <span class="citation" data-cites="serrano-silva_methanogenesis_2014">Serrano-silva et al. (<a href="#ref-serrano-silva_methanogenesis_2014" role="doc-biblioref">2014</a>)</span>)</li>
-<li>Especially important for GHG budgets because it has a global warming potential 27 times that of <span class="math inline">\(CO_2\)</span> on a 100 yr timescale (<span class="citation" data-cites="masson-delmotte_climate_2021">IPCC (<a href="#ref-masson-delmotte_climate_2021" role="doc-biblioref">2021</a>)</span>)
+<li>Plot the standard error figure with all collars for both linear and exponential data
 <ul>
-<li>Methane exchange is governed by the balance between <span class="math inline">\(CH_4\)</span> production (methanogenesis) and consumption (methanotrophy) - but this isn’t fully included in <span class="math inline">\(F_{CH4}\)</span></li>
+<li>X-axis: all collars; Y-axis: standard error values</li>
+<li>Establish the appropriate threshold and recompute the fluxes for collars that exceed this threshold</li>
 </ul></li>
-</ul>
-<li><span class="math inline">\(F_{VOC}\)</span>: Fluxes of volatile organic compounds (VOC)
-<ul>
-<li>Organic compounds (e.g., isoprene) are emitted by living plants</li>
-<li>Small, but non-negligible contributions - isoprene fluxes were less 0.5% the magnitude of NEE in a temperate poplar forest <span class="citation" data-cites="portillo-estrada_contribution_2018">Portillo-Estrada et al. (<a href="#ref-portillo-estrada_contribution_2018" role="doc-biblioref">2018</a>)</span></li>
 </ul></li>
-<li><span class="math inline">\(F_{DIC}\)</span> &amp; <span class="math inline">\(F_{DOC}\)</span>: Fluxes of dissolved inorganic carbon (DIC) and dissolved organic carbon (DOC)
+<li>Decide on fluxes
 <ul>
-<li>DIC - Primarily dissolved <span class="math inline">\(CO_2\)</span> in most systems, but can also include dissolved <span class="math inline">\(CH_4\)</span>, e.g., in peatlands (<span class="citation" data-cites="waddington_groundwater_1997">Waddington &amp; Roulet (<a href="#ref-waddington_groundwater_1997" role="doc-biblioref">1997</a>)</span> <span class="citation" data-cites="dinsmore_role_2010">Dinsmore et al. (<a href="#ref-dinsmore_role_2010" role="doc-biblioref">2010</a>)</span>; <span class="citation" data-cites="campeau_multiple_2017">Campeau et al. (<a href="#ref-campeau_multiple_2017" role="doc-biblioref">2017</a>)</span>)</li>
-<li>DOC - More complex organic compounds (e.g., root exudates)</li>
-<li>Varies drastically by ecosystem and timescale. In the Alaskan Arctic, dissolved C (DIC + DOC) are estimated to offset between 7% and 20% of NEP annual <span class="citation" data-cites="kling_arctic_1991">Kling et al. (<a href="#ref-kling_arctic_1991" role="doc-biblioref">1991</a>)</span>; a literature review found proportions of NEP offset by dissolved C fluxes ranged from &lt;1% in a boreal forest to 590% in a freshwater marsh <span class="citation" data-cites="webb_importance_2019">Webb et al. (<a href="#ref-webb_importance_2019" role="doc-biblioref">2019</a>)</span>.</li>
+<li>Compare the standard error between the linear and exponential fits. Select the fit with the lower standard error values</li>
+<li>If the differences in standard error values fall within the 5-10% range, opt for the fit with the higher flux</li>
 </ul></li>
-<li><span class="math inline">\(F_{PC}\)</span>: Fluxes of bulk/particulate carbon (PC)
-<ul>
-<li>A bit of a catch all - flux of particulate carbon can include all sorts of things:
-<ul>
-<li>Fluvial or aeolian erosion/deposition of organic matter</li>
-<li>Grazing herbivores (C removal) and animal droppings (C deposition) <a href="#fig-grazing">Figure&nbsp;1</a></li>
-<li>Timber harvesting or agriculture (bulk C removal)</li>
-</ul></li>
-<li>Spatially and temporally variable - heavily dependent upon the system you’re looking at.</li>
-</ul></li>
-</ul>
+<li>Export your data set for further analysis</li>
+</ol>
 <div id="fig-grazing" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Tundra_Veg.JPG" class="img-fluid figure-img"></p>
@@ -189,49 +138,8 @@ NECB = -NEE + F_{CO} + F_{CH4} + F_{VOC} + F_{DIC} + F_{DOC} + F_{PC}
 </div>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
-<div id="ref-aubinet_eddy_2012" class="csl-entry" role="doc-biblioentry">
-Aubinet, M., Vesala, T., &amp; Papale, D. (Eds.). (2012). <em>Eddy <span>Covariance</span>: <span>A</span> <span>Practical</span> <span>Guide</span> to <span>Measurement</span> and <span>Data</span> <span>Analysis</span></em> (2012 edition). Dordrecht ; New York: Springer.
-</div>
-<div id="ref-baldocchi_assessing_2003" class="csl-entry" role="doc-biblioentry">
-Baldocchi, D. D. (2003). Assessing the eddy covariance technique for evaluating carbon dioxide exchange rates of ecosystems: Past, present and future. <em>Global Change Biology</em>, <em>9</em>(4), 479–492. <a href="https://doi.org/10.1046/j.1365-2486.2003.00629.x">https://doi.org/10.1046/j.1365-2486.2003.00629.x</a>
-</div>
-<div id="ref-campeau_multiple_2017" class="csl-entry" role="doc-biblioentry">
-Campeau, A., Wallin, M. B., Giesler, R., Löfgren, S., Mörth, C.-M., Schiff, S., et al. (2017). Multiple sources and sinks of dissolved inorganic carbon across <span>Swedish</span> streams, refocusing the lens of stable <span>C</span> isotopes. <em>Scientific Reports</em>, <em>7</em>(1), 9158. <a href="https://doi.org/10.1038/s41598-017-09049-9">https://doi.org/10.1038/s41598-017-09049-9</a>
-</div>
-<div id="ref-chapin_reconciling_2006" class="csl-entry" role="doc-biblioentry">
-Chapin, F. S., Woodwell, G. M., Randerson, J. T., Rastetter, E. B., Lovett, G. M., Baldocchi, D. D., et al. (2006). Reconciling <span>Carbon</span>-cycle <span>Concepts</span>, <span>Terminology</span>, and <span>Methods</span>. <em>Ecosystems</em>, <em>9</em>(7), 1041–1050. <a href="https://doi.org/10.1007/s10021-005-0105-7">https://doi.org/10.1007/s10021-005-0105-7</a>
-</div>
-<div id="ref-cowan_seasonal_2018" class="csl-entry" role="doc-biblioentry">
-Cowan, N., Helfter, C., Langford, B., Coyle, M., Levy, P., Moxley, J., et al. (2018). Seasonal fluxes of carbon monoxide from an intensively grazed grassland in <span>Scotland</span>. <em>Atmospheric Environment</em>, <em>194</em>, 170–178. <a href="https://doi.org/10.1016/j.atmosenv.2018.09.039">https://doi.org/10.1016/j.atmosenv.2018.09.039</a>
-</div>
-<div id="ref-dinsmore_role_2010" class="csl-entry" role="doc-biblioentry">
-Dinsmore, K. J., Billett, M. F., Skiba, U. M., Rees, R. M., Drewer, J., &amp; Helfter, C. (2010). Role of the aquatic pathway in the carbon and greenhouse gas budgets of a peatland catchment. <em>Global Change Biology</em>, <em>16</em>(10), 2750–2762. <a href="https://doi.org/10.1111/j.1365-2486.2009.02119.x">https://doi.org/10.1111/j.1365-2486.2009.02119.x</a>
-</div>
-<div id="ref-masson-delmotte_climate_2021" class="csl-entry" role="doc-biblioentry">
-IPCC. (2021). <em>Climate <span>Change</span> 2021: <span>The</span> <span>Physical</span> <span>Science</span> <span>Basis</span>. <span>Contribution</span> of <span>Working</span> <span>Group</span> <span>I</span> to the <span>Sixth</span> <span>Assessment</span> <span>Report</span> of the <span>Intergovernmental</span> <span>Panel</span> on <span>Climate</span> <span>Change</span></em>. Cambridge University Press.
-</div>
-<div id="ref-kling_arctic_1991" class="csl-entry" role="doc-biblioentry">
-Kling, G. W., Kipphut, G. W., &amp; Miller, M. C. (1991). Arctic <span>Lakes</span> and <span>Streams</span> as <span>Gas</span> <span>Conduits</span> to the <span>Atmosphere</span>: <span>Implications</span> for <span>Tundra</span> <span>Carbon</span> <span>Budgets</span>. <em>Science</em>, <em>251</em>(4991), 298–301. <a href="https://doi.org/10.1126/science.251.4991.298">https://doi.org/10.1126/science.251.4991.298</a>
-</div>
-<div id="ref-lai_methane_2009" class="csl-entry" role="doc-biblioentry">
-Lai, D. Y. F. (2009). Methane <span>Dynamics</span> in <span>Northern</span> <span>Peatlands</span>: <span>A</span> <span>Review</span>. <em>Pedosphere</em>, <em>19</em>(4), 409–421.
-</div>
-<div id="ref-lovett_is_2006" class="csl-entry" role="doc-biblioentry">
-Lovett, G. M., Cole, J. J., &amp; Pace, M. L. (2006). Is <span>Net</span> <span>Ecosystem</span> <span>Production</span> <span>Equal</span> to <span>Ecosystem</span> <span>Carbon</span> <span>Accumulation</span>? <em>Ecosystems</em>, <em>9</em>(1), 152–155. <a href="https://doi.org/10.1007/s10021-005-0036-3">https://doi.org/10.1007/s10021-005-0036-3</a>
-</div>
-<div id="ref-portillo-estrada_contribution_2018" class="csl-entry" role="doc-biblioentry">
-Portillo-Estrada, M., Zenone, T., Arriga, N., &amp; Ceulemans, R. (2018). Contribution of volatile organic compound fluxes to the ecosystem carbon budget of a poplar short-rotation plantation. <em>GCB Bioenergy</em>, <em>10</em>(6), 405–414. <a href="https://doi.org/10.1111/gcbb.12506">https://doi.org/10.1111/gcbb.12506</a>
-</div>
-<div id="ref-serrano-silva_methanogenesis_2014" class="csl-entry" role="doc-biblioentry">
-Serrano-silva, N., Sarria-guzmán, Y., Dendooven, L., &amp; Luna-guido, M. (2014). Methanogenesis and <span>Methanotrophy</span> in <span>Soil</span>: <span>A</span> <span>Review</span>. <em>Pedosphere</em>, <em>24</em>(3), 291–307. <a href="https://doi.org/10.1016/S1002-0160(14)60016-3">https://doi.org/10.1016/S1002-0160(14)60016-3</a>
-</div>
-<div id="ref-waddington_groundwater_1997" class="csl-entry" role="doc-biblioentry">
-Waddington, J. M., &amp; Roulet, N. T. (1997). Groundwater flow and dissolved carbon movement in a boreal peatland. <em>Journal of Hydrology</em>, <em>191</em>(1), 122–138. <a href="https://doi.org/10.1016/S0022-1694(96)03075-2">https://doi.org/10.1016/S0022-1694(96)03075-2</a>
-</div>
-<div id="ref-webb_importance_2019" class="csl-entry" role="doc-biblioentry">
-Webb, J. R., Santos, I. R., Maher, D. T., &amp; Finlay, K. (2019). The <span>Importance</span> of <span>Aquatic</span> <span>Carbon</span> <span>Fluxes</span> in <span>Net</span> <span>Ecosystem</span> <span>Carbon</span> <span>Budgets</span>: <span>A</span> <span>Catchment</span>-<span>Scale</span> <span>Review</span>. <em>Ecosystems</em>, <em>22</em>(3), 508–527. <a href="https://doi.org/10.1007/s10021-018-0284-7">https://doi.org/10.1007/s10021-018-0284-7</a>
-</div>
+<div id="refs" role="doc-bibliography">
+
 </div>
 </section>
 </section>
