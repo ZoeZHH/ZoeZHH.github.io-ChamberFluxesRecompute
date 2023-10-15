@@ -56,7 +56,7 @@ To accurately compute the correct flux values, it's essential to obtain the prec
 
 Ultimately, we aim to determine flux values when the chamber headspace is at atmospheric concentration. Using a linear fit for measurements might underestimate the flux at ambient concentrations. An exponential curve fit, on the other hand, allows us to calculate the $dc/dt$ at time 0, which corresponds to when the chamber concentration matches the atmospheric concentration. As such, you might find that the exponential curve fit offers a more accurate interpretation most of the time!
 
-![Chamber Measurements](images/fluxesmeasurements copy.jpg){#fig-grazing}
+![Chamber Measurements (smart chamber + portable analyzer LI-7810)](images/fluxesmeasurements copy.jpg){#fig-grazing}
 
 ### References
 
