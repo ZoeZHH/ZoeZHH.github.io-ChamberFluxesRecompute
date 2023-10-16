@@ -45,7 +45,7 @@ To accurately compute the correct flux values, it's essential to obtain the prec
         -   The standard error of $dc/dt$ should be small
 3.  Export the recomputed dataset and verify the values for a second recompute
     -   Plot the standard error figure with all collars for both linear and exponential data
-        -   X-axis: all collars; Y-axis: standard error values
+        -   X-axis: collar number; Y-axis: standard error values
         -   Establish the appropriate threshold and recompute the fluxes for collars that exceed this threshold
 4.  Decide on fluxes
     -   Compare the standard error between the linear and exponential fits. Select the fit with the lower standard error values
@@ -57,8 +57,6 @@ To accurately compute the correct flux values, it's essential to obtain the prec
 Ultimately, we aim to determine flux values when the chamber headspace is at atmospheric concentration. Using a linear fit for measurements might underestimate the flux at ambient concentrations. An exponential curve fit, on the other hand, allows us to calculate the $dc/dt$ at time 0, which corresponds to when the chamber concentration matches the atmospheric concentration. As such, you might find that the exponential curve fit offers a more accurate interpretation most of the time!
 
 ![Chamber Measurements (smart chamber + portable analyzer LI-7810)](images/fluxesmeasurements%20copy.jpg){#fig-grazing width="350"}
-
-### References
 
 ::: {#refs}
 :::
