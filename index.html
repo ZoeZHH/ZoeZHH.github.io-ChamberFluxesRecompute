@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chamber Technique - Recompute Carbon Fluxes</title>
+<title>Chamber Technique - Estimate Each Flux</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chamber Technique - Recompute Carbon Fluxes</h1>
+<h1 class="title">Chamber Technique - Estimate Each Flux</h1>
 </div>
 
 
@@ -96,7 +96,7 @@ div.csl-indent {
 </ul>
 </section>
 <section id="secondly-lets-go-through-the-equation-on-calculating-the-flux-data-by-employing-chamber" class="level4">
-<h4 class="anchored" data-anchor-id="secondly-lets-go-through-the-equation-on-calculating-the-flux-data-by-employing-chamber"><strong>Secondly,</strong> let’s go through the equation on calculating the flux data by employing chamber:</h4>
+<h4 class="anchored" data-anchor-id="secondly-lets-go-through-the-equation-on-calculating-the-flux-data-by-employing-chamber">Secondly, let’s go through the equation on calculating the flux data by employing chamber:</h4>
 <p><span class="math inline">\(FCO2 = ((\rho* Ve)/A) * dc/dt\)</span></p>
 <p><span class="math inline">\(\rho\)</span> : the dry air density</p>
 <p><span class="math inline">\(A\)</span>: the surface area covered by chamber</p>
@@ -105,7 +105,7 @@ div.csl-indent {
 <p>To accurately compute the correct flux values, it’s essential to obtain the precise mixing ratio (<span class="math inline">\(dc/dt\)</span>). Therefore, the following procedures will guide you on how to recompute carbon fluxes by determining the correct (<span class="math inline">\(dc/dt\)</span>)​.</p>
 </section>
 <section id="thirdly-goals-for-optimized-flux-estimation-rule-hüppi2018" class="level4">
-<h4 class="anchored" data-anchor-id="thirdly-goals-for-optimized-flux-estimation-rule-hüppi2018"><strong>Thirdly</strong> Goals for optimized flux estimation rule <span class="citation" data-cites="hüppi2018">(<a href="#ref-hüppi2018" role="doc-biblioref">Hüppi et al., 2018</a>)</span>:</h4>
+<h4 class="anchored" data-anchor-id="thirdly-goals-for-optimized-flux-estimation-rule-hüppi2018">Thirdly, goals for optimized flux estimation rule <span class="citation" data-cites="hüppi2018">(<a href="#ref-hüppi2018" role="doc-biblioref">Hüppi et al., 2018</a>)</span>:</h4>
 <ol type="1">
 <li>Minimize the bias from given nonlinear shaped flux</li>
 <li>Minimize the uncertainty of the flux estimate</li>
@@ -152,6 +152,9 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Figure&nbsp;1: Chamber Measurements (smart chamber + portable analyzer LI-7810)</figcaption><p></p>
 </figure>
 </div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
 <div id="ref-hüppi2018" class="csl-entry" role="doc-biblioentry">
 Hüppi, R., Felber, R., Krauss, M., Six, J., Leifeld, J., &amp; Fuß, R. (2018). Restricting the nonlinearity parameter in soil greenhouse gas flux calculation for more reliable flux estimates. <em>PLOS ONE</em>, <em>13</em>(7), e0200876. <a href="https://doi.org/10.1371/journal.pone.0200876">https://doi.org/10.1371/journal.pone.0200876</a>

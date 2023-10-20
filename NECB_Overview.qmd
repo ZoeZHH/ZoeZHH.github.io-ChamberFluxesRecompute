@@ -1,5 +1,5 @@
 ---
-title: "Chamber Technique - Recompute Carbon Fluxes"
+title: "Chamber Technique - Estimate Each Flux"
 echo: false
 bibliography: NECB.bib
 csl: american-geophysical-union.csl
@@ -26,7 +26,7 @@ The following procedures list provide you a guideline of "manual screening" on r
 
 -   Deploying the chamber has no disturbance to soil moisture, temperature and radiation balance
 
-#### **Secondly,** let's go through the equation on calculating the flux data by employing chamber:
+#### Secondly, let's go through the equation on calculating the flux data by employing chamber:
 
 $FCO2 = ((\rho* Ve)/A) * dc/dt$
 
@@ -40,7 +40,7 @@ $dc/dt$: rate of change in flux concentration with time t
 
 To accurately compute the correct flux values, it's essential to obtain the precise mixing ratio ($dc/dt$). Therefore, the following procedures will guide you on how to recompute carbon fluxes by determining the correct ($dc/dt$)​.
 
-#### **Thirdly** Goals for optimized flux estimation rule [@hüppi2018]:
+#### Thirdly, goals for optimized flux estimation rule [@hüppi2018]:
 
 1.  Minimize the bias from given nonlinear shaped flux
 2.  Minimize the uncertainty of the flux estimate
@@ -69,6 +69,9 @@ To accurately compute the correct flux values, it's essential to obtain the prec
 Ultimately, we aim to determine flux values when the chamber headspace is at atmospheric concentration. Using a linear fit for measurements might underestimate the flux at ambient concentrations. An exponential curve fit, on the other hand, allows us to calculate the $dc/dt$ at time 0, which corresponds to when the chamber concentration matches the atmospheric concentration. As such, you might find that the exponential curve fit offers a more accurate interpretation most of the time!
 
 ![Chamber Measurements (smart chamber + portable analyzer LI-7810)](images/fluxesmeasurements%20copy.jpg){#fig-grazing width="350"}
+
+
+## References
 
 ::: {#refs}
 :::
