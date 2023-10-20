@@ -10,7 +10,7 @@ The chamber method is a widely-recognized technique employed for quantifying soi
 
 The linear regression is commonly used to estimate GHG fluxes, which tends to underestimate the pre-deployment flux. A non-linearity is expected when gas concentration increases inside a closed chamber (lateral flow/leakage may also contribute), but have tendency to overestimate some flux measurements, due to it exaggerated curvature. If we aim at reducing bias on flux estimates, we should combine a linear with a nonlinear method depending on the properties of each single flux measurement with a data set.The following procedures provide you guidelines on deciding which method is more appropriate for each flux estimate.
 
-The following procedures list provide you a guideline of "manual screening" on recomputing data by using Soilflux pro software. If you want to obtain high quality flux estimates directly without extensive knowledge, please try the GoFluxYourself package (https://github.com/Qepanna/GoFluxYourself) developed by Karelle Rheault.
+The following procedures list provide you a guideline of "manual screening" on recomputing data by using Soilflux pro software. If you want to obtain high quality flux estimates directly without extensive knowledge by using raw data files, please try the GoFluxYourself package (https://github.com/Qepanna/GoFluxYourself) developed by Karelle Rheault.
 
 ## Background Information
 
@@ -39,6 +39,14 @@ $Ve$: effective volume, which was assumed to be 1.1 times the geometric volume, 
 $dc/dt$: rate of change in flux concentration with time t
 
 To accurately compute the correct flux values, it's essential to obtain the precise mixing ratio ($dc/dt$). Therefore, the following procedures will guide you on how to recompute carbon fluxes by determining the correct ($dc/dt$)​.
+
+#### **Thirdly** Goals for optimized flux estimation rule [@hüppi2018]:
+
+1.  Minimize the bias from given nonlinear shaped flux
+2.  Minimize the uncertainty of the flux estimate
+3.  Avoid arbitrary threshold (subjective opinion)
+4.  Optimal decision scheme should be simple
+5.  The threshold parameters should based on statistical principles
 
 ## Procedures
 
